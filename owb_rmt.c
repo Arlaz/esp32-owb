@@ -303,7 +303,7 @@ static owb_status _read_bits(const OneWireBus * bus, uint8_t *in, int number_of_
                     {
                         if ((rx_items[i].level0 == 0) && (rx_items[i].duration0 < OW_DURATION_SAMPLE))
                         {
-                            // rising edge occured before 15us -> bit 1
+                            // rising edge occurred before 15us -> bit 1
                             read_data |= 0x80;
                         }
                     }

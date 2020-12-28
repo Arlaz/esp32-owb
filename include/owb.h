@@ -131,7 +131,7 @@ struct owb_driver
     /** Pointer to driver uninitialization function **/
     owb_status (*uninitialize)(const OneWireBus * bus);
 
-    /** Pointer to driver reset functio **/
+    /** Pointer to driver reset function **/
     owb_status (*reset)(const OneWireBus * bus, bool *is_present);
 
     /** NOTE: The data is shifted out of the low bits, eg. it is written in the order of lsb to msb */
